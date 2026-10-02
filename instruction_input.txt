@@ -1,0 +1,17 @@
+# Sample program: calculates sum and tests branching
+# Format: OP,ARG1,ARG2,ARG3
+# Program:
+# R1=10, R2=20, R3=R1+R2, Store R3 to MEM[0], Load MEM[0] to R4, etc.
+
+ADDI,R1,R0,10
+ADDI,R2,R0,20
+ADD,R3,R1,R2
+SW,R3,0
+LW,R4,0
+ADDI,R5,R0,5
+SUB,R6,R3,R5
+BEQ,R6,R4,2
+ADDI,R7,R0,99
+J,11
+ADDI,R7,R0,1
+HALT

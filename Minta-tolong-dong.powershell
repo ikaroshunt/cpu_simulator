@@ -1,0 +1,4 @@
+# masih di C:\...\cpu_simulator
+git add README.md
+git commit -m "docs: add final portfolio README"
+git push
